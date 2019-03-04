@@ -20,7 +20,7 @@ const articleHTML = $('#js-article').html();
 // Changer le contenue de l'article
 
 $('#js-article').html(<h2>This is my article.</h2>
-<p>This is my article's content.</p>);
+<p>This is my article's content.</p>
 
 
 const inputValue = $('#js-search').val();

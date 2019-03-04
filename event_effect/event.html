@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <style>
+      *{font-family: 'Open Sans', sans-serif;}
+      #js-hovered {
+  background-color: blue;
+  width: 7rem;
+  height: 7rem;
+}
+.tooltip-wrapper {
+  position: relative;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  color: #fff;
+  opacity: 1;
+  transform: translateY(100%);
+}
+#js-slide-example-address {
+margin: 0;
+  padding: 2rem;
+  background-color:	#b9bdd4;
+}
+
+#js-slide-example-links {
+  display: flex;
+  padding: 1rem 2rem;
+  background-color: #6e6f87;
+  color: #fff;
+}
+
+#js-slide-example-links a {
+  margin-right: 2rem;
+  color: inherit;
+}
+
+#js-animation-1 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border: 0 solid red;
+}
+
+      </style>
+    <meta charset="utf-8" />
+    <title>DOM JQuery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+        <button id="js-btn" class="btn btn-secondary">Button</button>
+
+        <div id="js-hovered"></div>
+
+        <p class="tooltip-wrapper" id="js-tooltip-wrapper">
+                <span class="tooltip" id="js-tooltip">En informatique, un langage de programmation est une notation conventionnelle destinée à formuler des algorithmes et produire des programmes informatiques qui les appliquent.</span>
+                JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs avec l'utilisation (par exemple) de Node.js.
+              </p>
+
+              <div class="alert alert-primary" style="display: none;" id="js-alert">
+                    Hide me!
+                    <button id="js-hide-alert">✕</button>
+                  </div>
+                  
+                  <button class="btn btn-primary" id="js-show-alert">Show alert</button>
+
+                  <p id="js-slide-example-address">Quai de Chartrons 33000 Bordeaux</p>
+<div id="js-slide-example-links" style="display: none;">
+  <a href="#">Voir sur la carte</a>
+  <a href="#">Directions</a>
+</div>
+
+<button class="btn btn-success" id="js-btn-fade-in">Fade In</button>
+<button class="btn btn-danger" id="js-btn-fade-out">Fade Out</button>
+<div style="background:#2E9AFE; width:200px; height:200px; margin-top:30px;" id="js-div-fade-in-out"></div>
+<div id="js-animation-1"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="event.js"></script>
+</body>
